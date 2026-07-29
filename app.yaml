@@ -9,4 +9,10 @@ test1:
   something: docker.io/mysql:26.5.1
 
 test2:
-  something: my.registry/postgres:17.10
+  something: my.registry/dockerhub/postgres:17.10
+
+prometheus:
+  image:
+    registry: quay.io
+    repository: prometheus/prometheus
+    tag: v3.13.0

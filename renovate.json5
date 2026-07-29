@@ -14,5 +14,14 @@
         "something: docker.io\/(?<depName>[^:]+):(?<currentValue>.+)",
       ],
     }
+
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["*.yaml"],
+      "datasourceTemplate": "docker",
+      "matchStrings": [
+        "something: my.registry/dockerhub\/(?<depName>[^:]+):(?<currentValue>.+)",
+      ],
+    }
   ]
 }
