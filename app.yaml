@@ -1,0 +1,5 @@
+test:
+  image:
+    registry: docker.io
+    repository: nginx
+    tag: 1.30.0

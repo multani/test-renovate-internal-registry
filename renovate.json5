@@ -1,0 +1,7 @@
+{
+  "extends": ["config:recommended"],
+
+  "helm-values": {
+    "managerFilePatterns": ["*.yaml"]
+  },
+}
