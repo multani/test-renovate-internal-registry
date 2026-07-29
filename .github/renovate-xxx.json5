@@ -1,0 +1,59 @@
+{
+  "prConcurrentLimit": 0,
+
+  "helm-values": {
+    "managerFilePatterns": ["*.yaml"]
+  },
+
+  "registryAliases": {
+    "my.registry/dockerhub": "docker.io",
+    "my.registry/quayio": "quay.io"
+  },
+
+  "packageRules": [
+    //{
+    //  "matchDepNames": ["my.registry\/dockerhub\/(?<name>[^:]+)"],
+    //  "overridePackageName": "docker.io/{{{name}}}",
+    //},
+    {
+      "matchDepNames": [
+        "quay.io/**",
+        "my.registry/quayio/**",
+      ],
+      //"overridePackageName": "quay.io/{{{name}}}",
+      "groupName": "{{packageName}}",
+    },
+  ],
+
+  "customManagers": [
+    //{
+    //  "customType": "regex",
+    //  "managerFilePatterns": ["*.yaml"],
+    //  "datasourceTemplate": "docker",
+    //  "matchStrings": [
+    //    "something: docker.io\/(?<depName>[^:]+):(?<currentValue>.+)",
+    //  ],
+    //},
+
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["*.yaml"],
+      "datasourceTemplate": "docker",
+      "matchStrings": [
+        "something: my.registry\/dockerhub\/(?<depName>[^:]+):(?<currentValue>.+)",
+        //"something: (?<depName>[^:]+):(?<currentValue>.+)",
+      ],
+      "depNameTemplate": "docker.io/{{{depName}}}",
+    },
+
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["*.yaml"],
+      "datasourceTemplate": "docker",
+      "matchStrings": [
+        "something: my.registry\/quayio\/(?<depName>[^:]+):(?<currentValue>.+)",
+      ],
+      "depNameTemplate": "quay.io/{{{depName}}}",
+    },
+  ]
+}
