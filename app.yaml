@@ -5,4 +5,8 @@ test:
     tag: 1.30.0
 
 
-image: docker.io/mysql:26.5.1
+test1:
+  something: docker.io/mysql:26.5.1
+
+test2:
+  something: my.registry/mysql:26.5.1
