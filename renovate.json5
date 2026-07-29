@@ -9,7 +9,9 @@
     {
       "fileMatch": ["*.yaml"],
       "datasourceTemplate": "docker",
-      "extractVersionTemplate": "image: docker.io/{{{depName}}}:{{{currentValue}}}",
+      "matchStrings": [
+        "image: docker.io/{{{depName}}}:{{{currentValue}}}",
+      ],
     }
   ]
 }
