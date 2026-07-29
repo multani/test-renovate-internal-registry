@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "config:recommended",
+    "local>multani/test-renovate-internal-registry//.github/renovate-xxx.json5"
+  ]
+}

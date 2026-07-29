@@ -3,3 +3,8 @@ test:
     registry: docker.io
     repository: nginx
     tag: 1.30.0
+
+
+test1:
+  something: docker.io/mysql:26.5.1
+
