@@ -9,4 +9,4 @@ test1:
   something: docker.io/mysql:26.5.1
 
 test2:
-  something: my.registry/mysql:26.5.1
+  something: my.registry/postgres:17.10
