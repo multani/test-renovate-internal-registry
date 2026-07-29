@@ -9,4 +9,4 @@ test123:
   image:
     registry: docker.io
     repository: redis
-    tag: 7.1.1
+    tag: 7.4.10
