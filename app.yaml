@@ -3,3 +3,10 @@ test:
     registry: docker.io
     repository: nginx
     tag: 1.30.0
+
+
+test123:
+  image:
+    registry: docker.io
+    repository: redis
+    tag: 7.1.1
