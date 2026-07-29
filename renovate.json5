@@ -15,7 +15,7 @@
       "matchStrings": [
         "something: docker.io\/(?<depName>[^:]+):(?<currentValue>.+)",
       ],
-    }
+    },
 
     {
       "customType": "regex",
@@ -25,7 +25,7 @@
         "something: my.registry\/dockerhub\/(?<depName>[^:]+):(?<currentValue>.+)",
       ],
       "depNameTemplate": "docker.io/{{{depName}}}",
-    }
+    },
 
     {
       "customType": "regex",
@@ -35,6 +35,6 @@
         "something: my.registry\/quayio\/(?<depName>[^:]+):(?<currentValue>.+)",
       ],
       "depNameTemplate": "quay.io/{{{depName}}}",
-    }
+    },
   ]
 }
