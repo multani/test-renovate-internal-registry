@@ -4,4 +4,12 @@
   "helm-values": {
     "managerFilePatterns": ["*.yaml"]
   },
+
+  "customManagers": [
+    {
+      "fileMatch": ["*.yaml"],
+      "datasourceTemplate": "docker",
+      "extractVersionTemplate": "image: docker.io/{{{depName}}}:{{{currentValue}}}",
+    }
+  ]
 }
