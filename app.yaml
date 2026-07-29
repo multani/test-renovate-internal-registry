@@ -11,6 +11,9 @@ test1:
 test2:
   something: my.registry/dockerhub/postgres:17.10
 
+test3:
+  something: my.registry/quayio/prometheus/prometheus:v3.13.0
+
 prometheus:
   image:
     registry: quay.io
