@@ -24,6 +24,17 @@
       "matchStrings": [
         "something: my.registry\/dockerhub\/(?<depName>[^:]+):(?<currentValue>.+)",
       ],
+      "depNameTemplate": "docker.io/{{{depName}}}",
+    }
+
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["*.yaml"],
+      "datasourceTemplate": "docker",
+      "matchStrings": [
+        "something: my.registry\/quayio\/(?<depName>[^:]+):(?<currentValue>.+)",
+      ],
+      "depNameTemplate": "quay.io/{{{depName}}}",
     }
   ]
 }
