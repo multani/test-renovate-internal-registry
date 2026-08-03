@@ -7,6 +7,11 @@
     "managerFilePatterns": ["*.yaml"]
   },
 
+  "registryAliases": {
+    "my.registry/dockerhub": "docker.io",
+    "my.registry/quayio": "quay.io"
+  },
+
   "packageRules": [
     {
       "matchDepNames": ["my.registry\/dockerhub\/(?<name>[^:]+)"],

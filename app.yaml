@@ -24,5 +24,5 @@ prometheus:
 prometheus:
   image:
     registry: my.registry
-    repository: quay.io/prometheus/prometheus
+    repository: quayio/prometheus/prometheus
     tag: v3.13.0
