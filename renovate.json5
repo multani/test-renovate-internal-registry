@@ -38,7 +38,7 @@
       "managerFilePatterns": ["*.yaml"],
       "datasourceTemplate": "docker",
       "matchStrings": [
-        //"something: my.registry\/dockerhub\/(?<depName>[^:]+):(?<currentValue>.+)",
+        "something: my.registry\/dockerhub\/(?<depName>[^:]+):(?<currentValue>.+)",
         //"something: (?<depName>[^:]+):(?<currentValue>.+)",
       ],
       "depNameTemplate": "docker.io/{{{depName}}}",
