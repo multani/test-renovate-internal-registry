@@ -28,4 +28,4 @@ prometheus3:
   image:
     registry: my.registry
     repository: quayio/prometheus/prometheus
-    tag: v3.13.0
+    tag: v3.13.2
