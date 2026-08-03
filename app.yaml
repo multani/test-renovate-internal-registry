@@ -6,7 +6,7 @@ test:
 
 
 test1:
-  something: docker.io/mysql:26.5.1
+  something: docker.io/mysql:26.7.0
 
 test2:
   something: my.registry/dockerhub/postgres:17.10
