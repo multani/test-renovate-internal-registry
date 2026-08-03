@@ -20,7 +20,7 @@
     {
       "matchPackageNames": ["my.registry/quayio/**"],
       //"overridePackageName": "quay.io/{{{name}}}",
-      "overridePackageName": "{{replace 'my.registry/quayio/' 'quay.io/' packageName}}",
+      "overrideDepName": "{{replace 'my.registry/quayio/' 'quay.io/' packageName}}",
     },
   ],
 
