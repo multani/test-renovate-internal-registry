@@ -1,14 +1,14 @@
 prom1:
-  something: my.registry/quayio/prometheus/prometheus:v3.13.0
+  something: my.registry/quayio/prometheus/prometheus:v3.13.2
 
 prom2:
   image:
     registry: quay.io
     repository: prometheus/prometheus
-    tag: v3.13.0
+    tag: v3.13.2
 
 prom3:
   image:
     registry: my.registry
     repository: quayio/prometheus/prometheus
-    tag: v3.13.0
+    tag: v3.13.2
