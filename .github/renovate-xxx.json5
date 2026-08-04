@@ -1,6 +1,4 @@
 {
-  "extends": ["config:recommended"],
-
   "prConcurrentLimit": 0,
 
   "helm-values": {
