@@ -16,7 +16,7 @@
     //  "overridePackageName": "docker.io/{{{name}}}",
     //},
     {
-      "matchPackageNames": ["my.registry/quayio/**"],
+      "matchDepNames": ["my.registry/quayio/**"],
       //"overridePackageName": "quay.io/{{{name}}}",
       "overrideDepName": "{{replace 'my.registry/quayio/' 'quay.io/' packageName}}",
     },
