@@ -21,7 +21,7 @@
         "my.registry/quayio/(?<name>.+)",
       ],
       //"overridePackageName": "quay.io/{{{name}}}",
-      "groupName": "{{{name}}}",
+      "groupName": "{{name}}",
     },
   ],
 
