@@ -1,5 +1,5 @@
 pg1:
-  something: my.registry/dockerhub/postgres:18.2
+  something: my.registry/dockerhub/postgres:18.4
 
 pg2:
   something: docker.io/postgres:18.2
@@ -8,10 +8,10 @@ pg3:
   image:
     registry: my.registry/dockerhub
     repository: postgres
-    tag: 18.2
+    tag: 18.4
 
 pg4:
   image:
     registry: my.registry
     repository: dockerhub/postgres
-    tag: "17.1"
+    tag: "17.10"
