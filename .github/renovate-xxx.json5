@@ -17,7 +17,7 @@
     //},
     {
       "matchDepNames": [
-        "quay.io/(?<name>.+)"
+        "quay.io/(?<name>.+)",
         "my.registry/quayio/(?<name>.+)",
       ],
       //"overridePackageName": "quay.io/{{{name}}}",
