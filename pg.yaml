@@ -14,4 +14,4 @@ pg4:
   image:
     registry: my.registry
     repository: dockerhub/postgres
-    tag: 18.2
+    tag: 17.10
