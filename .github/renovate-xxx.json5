@@ -17,11 +17,11 @@
     //},
     {
       "matchDepNames": [
-        "/quay.io\/(?<name>.+)$/",
-        "/my.registry\/quayio\/(?<name>.+)$/",
+        "/quay.io\/(?<dependencyName>.+)$/",
+        "/my.registry\/quayio\/(?<dependencyName>.+)$/",
       ],
       //"overridePackageName": "quay.io/{{{name}}}",
-      "groupName": "{{name}}",
+      "groupName": "{{dependencyName}}",
     },
   ],
 
